@@ -23,24 +23,20 @@
              android:src="@drawable/splash_icon" />
      </com.google.android.material.card.MaterialCardView>
 
+     <com.airbnb.lottie.LottieAnimationView
+         android:id="@+id/animationView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/cardView"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         app:lottie_autoPlay="true"
+         app:lottie_loop="true"
+         app:lottie_rawRes="@raw/cccc"
+         />
+
 
  </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/animationView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@raw/splashl"
-            />
-
-    </RelativeLayout>
 
 </RelativeLayout>
