@@ -1,5 +1,6 @@
 package com.HiSkyTech.statussaverapp.Ui.Activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -18,11 +19,12 @@ class splash : AppCompatActivity() {
 
         binding.apply {
 
-             Handler().postDelayed({
-                 animationView = splashLayout.animationView
-                 animationView.setAnimation("loding.json") // Replace "your-animation.json" with your animation file name
-                 animationView.playAnimation()
-             },3000)
+            Handler().postDelayed({
+                // Start the MainActivity after the delay
+                val intent = Intent(this@splash,MainActivity::class.java)
+                startActivity(intent)
+                finish() // Close the SplashActivity so the user can't go back to it
+            }, 9000)
         }
 
     }

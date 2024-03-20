@@ -16,10 +16,6 @@ private lateinit var binding: ActivityMainBinding
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val animationView = findViewById<LottieAnimationView>(R.id.animationView)
-        animationView.setAnimation("") // Replace "your-animation.json" with your animation file name
-        animationView.playAnimation()
-
         binding.apply {
 
             toolBar.setNavigationOnClickListener {
